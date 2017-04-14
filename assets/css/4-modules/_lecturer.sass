@@ -1,0 +1,90 @@
+/* lecturer Block */
+.lecturer
+	margin-bottom: 30px // this is temporary height. In real project it should be removed 
+	margin-left: 20px   // and set up with javascript EQUAL HEIGHT for boxes
+	.element
+		border: 3px solid darken($silver, 2%)
+		height: 356px
+		margin-right: 20px
+		transition: all 0.3s
+		width: 31.333333%
+		&:hover
+			box-shadow: 3px 3px 10px darken($gray, 5%)
+			transform: translateY(-10px)
+		.lecturer-icon
+			background-image: url('../img/people.png')
+			border-radius: 50%    
+			border: 4px solid darken($silver, 4%)
+			display: block
+			height: 130px
+			margin: 0 auto
+			width: 130px
+		.lecturer-1
+			background-position: -20px -20px
+		.lecturer-2
+			background-position: -153px -20px
+		.lecturer-3
+			background-position: -286px -20px
+		.lecturer-4
+			background-position: -20px  -153px 
+		.lecturer-5
+			background-position: -153px -153px 
+		.lecturer-6
+			background-position: -286px -153px 
+
+/* lecturer-social Sub-Block */
+ul.lecturer-social
+	li 
+		display: inline-block
+		font-size: 1.4em
+		list-style-type: none
+		margin: 10px 5px
+		.fa-facebook
+			color: $facebook
+			&:hover
+				color: lighten($facebook, 20%)
+		.fa-twitter
+			color: $twitter
+			&:hover
+				color: lighten($twitter, 15%)
+		.fa-linkedin
+			color: $linkedin
+			&:hover
+				color: lighten($linkedin, 15%)
+		a 
+			padding: 0 10px
+			&:hover
+				cursor: pointer
+				text-decoration: none
+
+.media-ob
+	background-image: url('../img/people-small.png')
+	border-radius: 50%    
+	display: block
+	height: 100px
+	margin: 0 20px 0 auto
+	width: 100px
+.lecturer-sm-1
+	background-position: -15px -15px
+.lecturer-sm-2
+	background-position: -122px -15px
+.lecturer-sm-3
+	background-position: -15px -121px
+.lecturer-sm-4
+	background-position: -122px -121px
+.lecturer-sm-5
+	background-position: -228px -15px 
+.lecturer-sm-6
+	background-position: -335px -15px
+.lecturer-sm-7
+	background-position: -229px -121px
+.lecturer-sm-8
+	background-position: -334px -122px
+.lecturer-sm-9
+	background-position: -15px -335px
+.lecturer-sm-10
+	background-position: -121px -335px 
+.lecturer-sm-11
+	background-position: -228px -335px 
+.lecturer-sm-12
+	background-position: -335px -334px 

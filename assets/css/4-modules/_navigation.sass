@@ -1,0 +1,52 @@
+/* Navigation - Side Menu */
+.side-menu
+	position: fixed
+	right: 20px
+	top: 40%
+	z-index: 100
+	ul li
+		margin: 10px 0
+		text-align: right
+		a
+			span
+				display: inline-block
+				&.menu-title
+					background-color: $red
+					border-radius: 4px
+					color: $white
+					font-size: 14px
+					margin-right: 10px
+					opacity: 0
+					padding: 3px 15px
+					position: relative
+					text-transform: uppercase
+					transform-origin: 100% 50%
+					transition: transform 0.2s, opacity 0.2s
+			&:hover span.menu-title
+				opacity: 1
+			span.dot
+				background-color: $red
+				border-radius: 2em
+				height: 10px
+				opacity: .7
+				position: relative
+				transition: all 0.2s
+				width: 10px
+			&:hover span.dot
+				opacity: 1
+				transform: scale(1.7)
+
+/* Footer Menu */
+.footer-menu
+	text-align: right
+	li
+		display: inline-block
+		a
+			color: lighten($footer-bg, 45%)
+			font-size: .9em
+			letter-spacing: 1px
+			line-height: 28px
+			padding-right: 15px
+			&:hover
+				color: $red
+				
